@@ -148,7 +148,7 @@ body {
 .text-block p { font-size: 1.1rem; margin-bottom: 1.5rem; color: var(--text-muted); }
 .stat-box { display: flex; gap: 2rem; }
 .stat-item { text-align: center; }
-.stat-num { display: block; font-size: 4rem; font-weight: 800; color: #ffffff; line-height: 1; }
+.stat-num { display: block; font-size: 4rem; font-weight: 800; color: var(--primary); line-height: 1; }
 .stat-label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); }
 
 /* Routine Type Info */
