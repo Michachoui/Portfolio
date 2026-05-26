@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michel Gomez — Portfolio Professionnel</title>
+    <meta name="description" content="Portfolio de Michel Gomez, Technicien Réseaux et futur Pentester.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="loader"><div class="loader-content">MG<span>.</span></div></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#accueil" class="logo">Michel Gomez<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#perso">Perso</a></li>
+                <li><a href="#entreprise">Entreprise</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#veille">Veille</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Changer le thème"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="accueil" class="hero">
+            <canvas id="network-canvas"></canvas>
+            <div class="container">
+                <div class="hero-content">
+                    <h5 class="reveal">Bienvenue sur mon espace</h5>
+                    <h1 class="reveal-title"><span id="name-first">Michel</span> <span id="name-last" class="text-white">Gomez</span></h1>
+                    <h2 class="reveal">Étudiant BTS SIO Option SISR</h2>
+                    <p class="reveal">Architecte Réseaux en devenir & Passionné de Cybersécurité.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="perso" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="subtitle">01. Mon Histoire</span>
+                    <h2 class="title">Parcours Personnel</h2>
+                </div>
+                <div class="content-grid">
+                    <div class="text-block anim-fade">
+                        <p>Après <strong>5 ans d'expérience</strong>... (garde ton texte habituel)</p>
+                    </div>
+                    <div class="stat-box anim-fade">
+                        <div class="stat-item">
+                            <span class="stat-num text-white">28</span>
+                            <span class="stat-label text-white">Ans</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num text-white">05</span>
+                            <span class="stat-label text-white">Ans d'Expérience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ... (Garde le reste de ton code tel quel jusqu'à la section Veille) ... -->
+
+        <section id="veille" class="section bg-footer">
+            <div class="container">
+                <div class="section-header white">
+                    <span class="subtitle">04. Horizon Numérique</span>
+                    <h2 class="title">Veille Technologique</h2>
+                </div>
+                <div class="veille-content anim-fade">
+                    <div class="veille-grid">
+                        <div class="veille-item">
+                            <i class="fas fa-shield-halved"></i>
+                            <h4>Cybersécurité</h4>
+                            <p>Analyse quotidienne des bases de données de vulnérabilités (NVD/CVE)...</p>
+                        </div>
+                        <div class="veille-item">
+                            <i class="fas fa-cubes"></i>
+                            <h4>Cisco Catalyst Center</h4>
+                            <p>Cisco Catalyst Center est une plateforme logicielle centrale...</p>
+                            <div class="mermaid" style="margin-top: 25px; background: rgba(0,0,0,0.2); padding: 20px; border-radius: 12px;">
+                                flowchart TD
+                                    Cerveau("CISCO CATALYST CENTER")
+                                    Muscles("ÉQUIPEMENTS PHYSIQUES")
+                                    Cerveau ==> Muscles
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="snap-footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="mailto:michel.gomez13@laposte.net" class="mail-btn text-white">michel.gomez13@laposte.net</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
